@@ -74,10 +74,18 @@ input:focus {
 form button{
     margin:0;
     margin: 30px 0px;
-    max-width: 350px;
     width: 100%;
 }
 
+.alignment-li{
+    border: 1px solid #0076a3;
+    border-radius: 20px;
+    padding:  0px 50px;
+    width: 100%;
+    max-width: 350px;
+    max-height: 300px;
+    overflow-y: auto;
+}
 
 
 
