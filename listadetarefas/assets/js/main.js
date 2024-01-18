@@ -98,7 +98,7 @@ function exibTask (text) {
 function buttonClearTask (li){
     li.innerText += ' ' //DANDO ESPAÇO ENTRE O LI E O BUTÃO
     const buttonClear = document.createElement('button');
-    buttonClear.innerText = 'Apagar' //ESCREVENDO DENTRO DO BUTÃO
+    buttonClear.innerText = 'X' //ESCREVENDO DENTRO DO BUTÃO
     buttonClear.setAttribute('class', 'deleting');
     li.appendChild(buttonClear);
 }
@@ -122,7 +122,7 @@ function saveTasks () {
     
     for (let task of allLi){
         let taskAll = task.innerText; // ATRIBUINDO AS TAREFAS ENVIADAS PARA UMA LET
-        taskAll = taskAll.replace('Apagar', '').trim(); //SUBISTITUINDO A PALAVRA 'APAGAR' POR NADA ''
+        taskAll = taskAll.replace('X', '').trim(); //SUBISTITUINDO A PALAVRA 'APAGAR' POR NADA ''
         arrayLi.push(taskAll); //JOGANDO TODAS AS TAREFAS DENTRO DO ARRA
         }
 
